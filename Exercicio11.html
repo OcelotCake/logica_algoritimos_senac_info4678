@@ -1,0 +1,24 @@
+<!--  x y z delta dawn -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="X">
+    <input id="numero2" type="number" placeholder="Y">
+    <input id="numero2" type="number" placeholder="Z">
+
+    <button onclick="findDelta()">Click</button>
+    <script>
+        function findDelta() {
+            var one = Number(document.getElementById("numero").value);
+            var two = Number(document.getElementById("numero2").value);
+            var three = Number(document.getElementById("numero3").value);
+            alert(`For ${one*two}M, fica ${(one*two/2).toFixed(2)}L`)
+        }
+    </script>
+</body>
+</html>

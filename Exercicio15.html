@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculateMoneymade</title>
+</head>
+<body>
+    <h1>Working for the man find your worth</h1>
+    <p>Enter the number of Days worked:</p>
+    <input type="number" id="daysWorked" placeholder="daysWorked">
+    <button onclick="calculateMoneymade()">Calculate calculateMoneymade</button>
+    
+    <p id="result"></p>
+
+    <script>
+        function calculateMoneymade() { 
+            let daysWorked = document.getElementById("daysWorked").value;
+
+            if (daysWorked === "" || daysWorked <= 0) {
+                document.getElementById("result").innerHTML = "Please enter a valid number of days.";
+                return;
+            }
+            let estimatedmoneymade = daysWorked * 8 * 25;
+            
+            document.getElementById("result").innerHTML = 
+                `You will work ${daysWorked} days for R$${estimatedmoneymade.toFixed(2)} of pay.`;
+        }
+    </script>
+</body>
+</html>

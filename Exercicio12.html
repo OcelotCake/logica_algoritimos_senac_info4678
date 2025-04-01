@@ -1,0 +1,22 @@
+<!--Crie um programa que o usuário irá digitar o preço de um produto, calcule e mostre o seu 
+PREÇO PROMOCIONAL, com 5% de desconto-->
+<!--  x y z delta dawn -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=9.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="Insert price to see discount">
+
+    <button onclick="clickbutton()">Click</button>
+    <script>
+        function clickbutton() {
+            var one = Number(document.getElementById("numero").value);
+            alert(`For R$${one}, You get a R$${(one/100*5).toFixed(2)}, Discount New Total is R$${(one-one/100*5).toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

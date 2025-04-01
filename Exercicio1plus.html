@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Class 02</title>
+</head>
+<body>
+    
+    <input type="number" id="idade" placeholder="Escreva data nascimento">
+    <button onclick="showIDinfo('idade')">Click me/button>
+
+    <script>
+        function showIDinfo(id){
+            var idade = document.getElementById(id).value;
+            var anoAtual = 2025;
+            var resultado = anoAtual - idade;
+            alert(`Sua idade é de ${resultado} anos!`);
+        }
+    </script>
+</body>
+</html>

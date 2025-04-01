@@ -1,0 +1,36 @@
+<!--  A locadora de carros precisa da sua ajuda para cobrar seus serviços. 
+  Escreva um programa que o usuário irá digitar a quantidade de Km percorridos
+   por um carro alugado e a quantidade de dias pelos quais ele foi alugado. 
+   Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia 
+  e R$0,20 por Km rodado
+  |First number of days
+  Second number of Km driven
+  third number of R$  per day 
+  four number of R$ per Km driven
+  input a number that calculates the total cost of the car rental  . -->
+
+  <!--Faça um algoritmo que o usuário irá digitar o salário de um funcionário,
+ calcule e mostre o seu novo salário, com 15% de aumento. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=9.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="Days" type="number" placeholder="Days">
+    <input id="Km" type="number" placeholder="Km driven">
+    <button onclick="clickbutton()">Click</button>
+    <script>
+        function clickbutton() {
+            var Days = Number(document.getElementById("Days").value);
+            var km = Number(document.getElementById("Km").value);
+            var result = (Days*90)+(km*0.2);
+            alert(`Your Toral is R$${result.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>
+

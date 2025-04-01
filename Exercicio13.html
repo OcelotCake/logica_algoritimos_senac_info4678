@@ -1,0 +1,22 @@
+<!--Faça um algoritmo que o usuário irá digitar o salário de um funcionário,
+ calcule e mostre o seu novo salário, com 15% de aumento. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=9.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="Current Salary">
+
+    <button onclick="clickbutton()">Click</button>
+    <script>
+        function clickbutton() {
+            var one = Number(document.getElementById("numero").value);
+            alert(`For R$${one}, You get a R$${(one/100*15).toFixed(2)},Increase Your New Salary is R$${(one+one/100*15).toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

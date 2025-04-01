@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade calculator</title>
+</head>
+<body>
+    <input id="Nota1" type="number" placeholder="Nota1">
+    <input id="Nota2" type="number" placeholder="Nota2">
+    <button onclick="calculator()">Click</button>
+    <script>
+    function calculator() {
+        var grade1 = Number(document.getElementById('Nota1').value );
+        var grade2 = Number(document.getElementById('Nota2').value );
+        var total = (grade1 + grade2)/2;
+        alert(total)
+}
+      </script>
+      
+
+
+   
+    </body>
+</html>
+
+
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="Valor em: $ €  £">
+    <button onclick="antesDepois()">Click</button>
+    <script>
+        function antesDepois() {
+            var one = Number(document.getElementById("numero").value);
+            alert(`O valor de  R$${one}, fica $${(one/5.76).toFixed(2)}, 
+            €${(one/6.34).toFixed(2)}, e em  £${(one/7.46).toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

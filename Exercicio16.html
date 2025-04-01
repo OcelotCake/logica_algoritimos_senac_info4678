@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigarette Damage Calculator</title>
+</head>
+<body>
+    <h1>Cigarette Damage Calculator</h1>
+    <p>Enter the number of cigarettes you smoke per day and Years you smoked:</p>
+    <input type="number" id="cigarettesPerDay" placeholder="Cigarettes per day">
+    <input type="number" id="yearsSmoked" placeholder="yearsSmoked">
+    <button onclick="calculateDamage()">Calculate Damage</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateDamage() {
+            // Get the number of cigarettes smoked per day
+            let cigarettesPerDay = document.getElementById("cigarettesPerDay").value;
+            
+            //Get the number of years smoked
+            let yearsSmoked = document.getElementById("yearsSmoked")
+
+            // Validate input
+            if (cigarettesPerDay === "" || cigarettesPerDay <= 0) {
+                document.getElementById("result").innerHTML = "Please enter a valid number of cigarettes per day.";
+                return;
+            }
+
+            // Calculate the total cigarettes smoked in a year (365 days)
+            let totalCigarettes = cigarettesPerDay * 365;
+            //this should be the minutes in a day  
+            let estimatedDamage = totalCigarettes * 10; // A simplistic damage factor for illustration
+            let totalDaysofDamage = estimatedDamage / 1440 ;
+            // Show the result
+            document.getElementById("result").innerHTML = 
+                `You will smoke ${totalCigarettes} cigarettes. The estimated damage
+                 is ${totalDaysofDamage.toFixed(2)} days of damage.`;
+        }
+    </script>
+</body>
+</html>

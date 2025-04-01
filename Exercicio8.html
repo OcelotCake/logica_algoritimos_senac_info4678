@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="numero">
+    <button onclick="antesDepois()">Click</button>
+    <script>
+        function antesDepois() {
+            var one = Number(document.getElementById("numero").value);
+            alert(`A distância de  ${one}M é ${one/1000}km, ${one/100}Hm, ${one*10}Dam,
+            ${one*1000}dm, ${one*100}cm,${one*1000}mm`)
+        }
+    </script>
+</body>
+</html>
